@@ -38,6 +38,7 @@ function max(...numbers) { // Rest => ...numbers in local varibale
     var number = Array.prototype.slice.call(arguments) // Spread => ...numbers intro functions
     return number
 }
+
 // const max = (...numbers) => numbers
 
 max(1, 3,);
@@ -70,3 +71,50 @@ function connect({
 connect({host: undefined, port: 3000, guest: undefined} = {});
 
 // Destructuring arrays. Lesson 15
+const fib = [1, 1, 2, 3, 5, 8, 13];
+const [a, , c, , , , b] = fib;
+
+const line = [[10, 17], [14, 7]]
+const [ [p1x, p1y], [p2x, p2y] ] = line
+
+const people = ['chris', 'sandra', 'bob']
+const [a, ...others] = people
+
+const dict = {
+    duck: 'quack',
+    dog: 'wuff',
+    mouse: 'squeak',
+    hamster: 'squeak'
+}
+const res = Object.entries(dict)
+    .filter(([, value]) => value === 'squeak')
+    .map(([key]) => key)
+
+const shape = {
+    type: 'segment',
+    coordinates: {
+        start: [10, 15],
+        end: [17, 18],
+    }
+};
+const {coordinates: {start: [startX, startY], end: [endX, endY]}} = shape;
+
+// Objects in es2015. Lesson 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

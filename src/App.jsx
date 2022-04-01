@@ -1,3 +1,8 @@
+const x = 10;
+const y = y;
+
+console.log()
+
 
 function App() {
     return (
