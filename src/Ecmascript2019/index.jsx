@@ -155,7 +155,26 @@ const res = {
   }
 }
 
-// Prototype
+// Prototype. Lesson 18.
+function Animals(name, voice) {
+  this.name = name;
+  this.voice = voice;
+}
+
+Animals.prototype.say = function () {
+  console.log(this.name, 'goes', this.voice)
+}
+
+const dog = new Animals('Dog', 'woof');
+const cat = new Animals('Cat', 'meow');
+// Object.setPrototypeOf() УЖАСНЫЙ ГОВНОКОД!!! НИКОГДА НЕ ИСПОЛЬЗОВАТЬ!!!
+
+console.log(dog.say())
+console.log(cat.say())
+
+// Classes. Lesson 19
+
+
 
 
 
