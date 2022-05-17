@@ -134,7 +134,28 @@ person.friends.push('Jane')
 
 
 // Object spread for Objects. Lesson 17.
+const defaults = {
+  host: 'localhost',
+  dbName: 'blog',
+  user: 'admin'
+}
 
+const opts = {
+  user: 'John',
+  password: 'utopia'
+}
+const port = 8080;
+const result = Object.assign({}, defaults, opts)
+const res = {
+  ...defaults,
+  ...opts,
+  port,
+  connect(ctx) {
+    return ctx
+  }
+}
+
+// Prototype
 
 
 
