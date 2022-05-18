@@ -169,11 +169,50 @@ const dog = new Animals('Dog', 'woof');
 const cat = new Animals('Cat', 'meow');
 // Object.setPrototypeOf() УЖАСНЫЙ ГОВНОКОД!!! НИКОГДА НЕ ИСПОЛЬЗОВАТЬ!!!
 
-console.log(dog.say())
-console.log(cat.say())
-
 // Classes. Lesson 19
+class prot {
+  constructor(name2, voice2) {
+    this.name2 = name2;
+    this.voice2 = voice2;
+  }
 
+  say2() {
+    return this
+  }
+
+  say3() {
+    return this
+  }
+}
+
+class Animal extends prot {
+  constructor(name, voice, canFly) {
+    super(name, voice, canFly);
+    super.say2();
+    this.canFly = canFly;
+    this.name = name;
+    this.voice = voice;
+  }
+
+  say() {
+    return this
+  }
+}
+
+const dog = new Animal('duck', 'cra', true);
+
+// Class proporties. Lesson 20
+class Counter {
+  count = 0;
+  inc = () => {
+    this.count += Counter.incrementStep;
+    console.log(this.count);
+  }
+  static incrementStep = 2;
+}
+
+const cnt = new Counter();
+cnt.inc();
 
 
 
