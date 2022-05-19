@@ -215,6 +215,12 @@ const cnt = new Counter();
 cnt.inc();
 
 
+//  Modules. Lesson 21.
+// import './Ecmascript2019/forEducModules'; Start codes from module
+// import {add, substr} from './forEducModules'; // function
+// import Graph from "./forEducModules"; // with export default
+// import {add as a, substr as s} from './forEducModules'; // rename
+// import Graph, {add, substr, divide} from './forEducModules';
 
 
 
