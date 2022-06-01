@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ToDo from "./components/app";
+import ToDo from "./components/app/";
 
 const App = () => {
   return (
