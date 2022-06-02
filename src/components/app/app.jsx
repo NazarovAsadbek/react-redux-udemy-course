@@ -20,7 +20,7 @@ const ToDo = () => {
         <SearchPanel/>
         <ItemStatusFilter/>
       </div>
-      <TodoList todos={todoData}/>
+      <TodoList onDeleted={(id) => console.dirxml(id)} todos={todoData}/>
     </div>
   )
 };
